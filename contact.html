@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sorin Tudose">
+
+    <link rel="icon" href="#">
+    <link rel="stylesheet" href="style.css">
+
+    <title>ATGC | MyCompany</title>
+
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="profile">
+            <div id="picture">
+                <img src="sigla.jpg" alt="#">
+            </div>
+
+            <div id="companyDetails">
+                <p id="companyTitle">AT Grand Consulting</p>
+
+                <p id="companyProfile">
+                    <b>Fondator: </b>Adrian Tudose
+                    <br>
+                    <b>Data fondarii: </b>2005
+                    <br>
+                    <b>Descriere: </b>
+                </p>
+
+            </div>
+        </div>
+
+        <nav id="nav">
+
+            <div class="navLinks">
+                <a href="index.html">Acasa</a>
+            </div>
+
+            <div class="navLinks">
+                <a href="services.html">Servicii</a>
+            </div>
+
+            <div class="navLinks">
+                <a href="projects.html">Proiecte</a>
+            </div>
+
+            <div class="navLinks"
+                style="background-color: rgb(204, 218, 231);">
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+
+        <div id="contact">
+            <div id="contactInfo">
+                <p><b style="font-size: 20pt;">AT Grand Consulting SRL</b>
+                    <br><br>
+                    <b style="font-size: 20pt;">Date de identificare:</b><br>Adresa: Str. Valea Buzaului Nr.3, Bl G13, Romania, Bucuresti -Sector 3 <br>CUI:
+                    RO17446190, <br>Reg.Com: J40/6333/2005 <br>Cap.Soc: 200 Ron <br>Email: office @ atgrandconsulting/ro</p>
+            </div>
+
+            <form id="contactForm" action="feedback.php" method="post">
+                <h3>Contacteaza-ne</h3>
+                <input type="text" id="name" name="name" placeholder="Name*" required><br>
+                <input type="email" id="email" name="email" placeholder="Email*" required><br>
+                <textarea id="feedback" name="feedback" placeholder="Feedback*" required></textarea><br>
+                <input id="button" type="submit" value="Submit">
+            </form>
+        </div>
+
+        <footer id="footer">
+            <p>
+                © 2023 Sorin Tudose. All rights reserved.
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

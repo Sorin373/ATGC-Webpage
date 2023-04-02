@@ -1,0 +1,384 @@
+body {
+    height: 100%;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: rgb(73, 72, 72);
+    background-color: rgb(255, 255, 255);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    cursor: default;
+}
+
+a:link {
+    color: rgb(95, 95, 95);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(95, 95, 95);
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 1rem;
+    width: auto;
+    height: 100%;
+    margin: 10%;
+    margin-top: 2%;
+    margin-bottom: 0;
+    background-position: center;
+}
+
+#profile {
+    grid-row: 1;
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 15rem auto;
+    grid-template-rows: auto;
+    background-color: rgb(234, 239, 245);
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#picture {
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: 50%;
+    margin: 2rem;
+    margin-right: 0;
+    height: auto;
+}
+
+#picture img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#companyDetails {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 1rem;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#companyTitle {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    font-size: 40pt;
+    font-weight: 700;
+    margin: 1rem;
+    margin-bottom: 0;
+    padding-right: 5rem;
+    text-transform: uppercase;
+    border-bottom-style: solid;
+    border-width: 2px;
+}
+
+#companyProfile {
+    padding: 0;
+    margin: 1rem;
+    margin-top: 0;
+    font-size: 20pt;
+    font-weight: 300;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#companyDetails img {
+    width: 200px;
+    height: 200px;
+    margin: 2rem;
+    margin-top: 0;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-row: 2;
+    grid-column: 1;
+    background-color: rgb(234, 239, 245);
+    border-radius: 10px;
+}
+
+.navLinks {
+    color: rgb(73, 72, 72);
+    font-size: 20pt;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-right: 5px;
+}
+
+.navLinks:hover {
+    background-color: rgb(190, 205, 219);
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.navLinks a:hover {
+    text-decoration: none;
+}
+
+.navLinks a:visited {
+    color: rgb(73, 72, 72);
+}
+
+#aboutCompany {
+    grid-column: 1;
+    grid-row: 3;
+    background-color: rgb(252, 241, 241);
+    border-radius: 10px;
+    margin-bottom: 1%;
+}
+
+#footer {
+    text-align: left;
+    padding: 10px;
+}
+
+#footer p {
+    margin: 0;
+    font-size: 8pt;
+}
+
+#aboutTitle p {
+    margin: 0;
+    font-size: 35pt;
+    padding: 1rem;
+    padding-bottom: 1rem;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+#aboutContent p {
+    margin: 0;
+    font-size: 15pt;
+    padding: 2%;
+    text-align: justify;
+}
+
+#companyServices {
+    grid-column: 1;
+    grid-row: 3;
+    background-color: rgb(252, 241, 241);
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+
+#servicesTitle p {
+    margin: 0;
+    font-size: 35pt;
+    padding: 1rem;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+#companyServices article{
+    margin: 0;
+    font-size: 15pt;
+    padding: 2%;
+    text-align: justify;
+}
+
+#projectCompany {
+    grid-column: 1;
+    grid-row: 3;
+    background-color: rgb(252, 241, 241);
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+
+#projectTitle p {
+    margin: 0;
+    font-size: 35pt;
+    padding: 1rem;
+    border-bottom-style: solid;
+    border-width: 2px;
+}
+
+#projectContent {
+    margin: 0;
+    font-size: 15pt;
+    padding: 1rem 2rem;
+    text-align: justify;
+}
+
+#projectContent a {
+    padding: 1rem;
+    margin: 0;
+}
+
+#projectContent a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#contact {
+    grid-column: 1;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+}
+
+#contactInfo {
+    grid-column: 2;
+    grid-row: 1;
+    width: fit-content;
+    margin: auto;
+}
+
+#contactForm {
+    grid-row: 1;
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 5px;
+    margin: auto;
+    width: 45rem;
+    height: auto;
+    margin-left: 0;
+    background-color: rgb(234, 239, 245);
+    padding: 2rem;
+    padding-top: 0;
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+
+#contactForm h3 {
+    font-size: 35pt;
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+}
+
+#contactForm input, textarea {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 15pt;
+    background-color: #ffffff;
+    width: 100;
+    height: 100%;
+    resize: none;
+    padding: 5px;
+}
+
+#contactForm textarea {
+    resize: vertical;
+}
+
+#button {
+    text-align: center;
+    width: 25%;
+    margin: auto;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: rgb(231, 230, 228);
+    transition: 100ms;
+}
+
+#button:active {
+    width: 23%;
+    transition: 100ms;
+    border-radius: 100%;
+}
+
+::placeholder {
+    color: rgb(150, 150, 150);
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgb(150, 150, 150);
+    opacity: 1;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgb(150, 150, 150);
+    opacity: 1;
+}
+
+::selection {
+    background-color: rgb(218, 216, 216);
+}
+
+#projectNav {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    margin: 0;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+#projectNav a {
+    font-size: 25pt;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+#projectNav a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(59, 58, 58);
+}
+
+#projectDescription {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 15pt;
+    margin: 0;
+    padding: 1.5rem;
+    text-align: justify;
+    background-color: rgb(247, 235, 235);
+}
+
+#title {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-style: solid;
+    border-width: 2px;
+    font-size: 25pt;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(240, 217, 217);
+}

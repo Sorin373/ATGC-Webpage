@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sorin Tudose">
+
+    <link rel="icon" href="#">
+    <link rel="stylesheet" href="/style.css">
+
+    <title>ATGC | MyCompany</title>
+
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="profile">
+            <div id="picture">
+                <img src="/sigla.jpg" alt="#">
+            </div>
+
+            <div id="companyDetails">
+                <p id="companyTitle">AT Grand Consulting</p>
+
+                <p id="companyProfile">
+                    <b>Fondator: </b>Adrian Tudose
+                    <br>
+                    <b>Data fondarii: </b>2005
+                    <br>
+                    <b>Descriere: </b>
+                </p>
+
+            </div>
+        </div>
+
+        <nav id="nav">
+
+            <div class="navLinks">
+                <a href="/index.html">Acasa</a>
+            </div>
+
+            <div class="navLinks">
+                <a href="/services.html">Servicii</a>
+            </div>
+
+            <div class="navLinks" style="background-color: rgb(204, 218, 231);">
+                <a href="/projects.html">Proiecte</a>
+            </div>
+
+            <div class="navLinks" style="margin-right: 0;">
+                <a href="/contact.html">Contact</a>
+            </div>
+        </nav>
+
+        <div id="projectCompany">
+
+            <div id="projectTitle">
+                <p>EasyCheck -VATNo</p>
+            </div>
+            <article id="projectContent">
+                <p><b>Folosind aplicatia ai
+                        urmatoarele
+                        beneficii, referitoare la verificarea VATNo-ului partenerilor:</b>
+                    <br>
+                    <ol>
+                        <li>se verifica daca VATNo exista la ANAF (sa nu fie gresit inregistrat in sistem)</li>
+                        <li>se verifica Nume, Adresa, stare generala</li>
+                        <li>status tva la incasare</li>
+                        <li>status inactivi la ANAF</li>
+                        <li>status VATNo in platforma VIES, pentru partenerii din UE</li>
+                    </ol>
+                    <b>Procesul de verificare
+                        este urmatorul:</b>
+                    <ol>
+                        <li>Prin intermediul aplicatiei QlikView se incarca toate VATNo-urile clientilor si furnizorilor
+                            din ERP
+                            si
+                            se exporta intr-un CSV</li>
+                        <li>Aplicatia QlikView trimite CSV-uri (in pachete de ~250 pcs) in aplicatia WEB, printr-un FTP
+                        </li>
+                        <li>Aplicatia web interogheaza in mod automat site-urile ANAF si VIES, dupa un program stabilit
+                            de
+                            utilizator</li>
+                        <li>Dupa finalizarea interogarii obtinem o baza de date SQL cu informatiile din poza de mai jos.
+                        </li>
+                        <li>Informatiile din SQL se incarca intr-o aplicatie QlikView si se pot compara cu informatiile
+                            existente
+                            in ERP &rarr; <b>se marcheaza diferentele privind atributul fiscal, pentru a fi operate
+                                corectii in
+                                ERP
+                                (se genereaza rapoarte de tip alerta)</b></li>
+                    </ol>
+                    Interfata
+                    de
+                    vizualizare:
+                    Interfata de vizualizare a datelor
+                    este
+                    realizata in QlikView si permite
+                    utilizatorului sa realizeze filtre
+                    rapide dupa diverse criterii.
+                    <br>
+                    Pe langa raportul general care prezinta
+                    situatia
+                    generala a partenerilor (clienti /
+                    furnizori), asa cum este preluata din platformele ANAF si VIES, mai pot fi realizate rapoarte
+                    specifice
+                    de
+                    alerta care sa compare informatiile cu starile existente in ERP-ul clientului.
+                    <br><br>
+                    <a href="/demo-poze/Scheme1.png" target="_blank">
+                        <img src="/demo-poze/Scheme1.png" alt="picture" width="450px" height="250px"
+                            style="border: solid 1px rgb(0, 0, 0); padding: 10px; background-color: rgb(255, 255, 255);">
+                    </a>
+                    <a href="/demo-poze/Scheme2.png" target="_blank">
+                        <img src="/demo-poze/Scheme2.png" alt="picture" width="450px" height="250px"
+                            style="border: solid 1px rgb(0, 0, 0); padding: 10px; background-color: rgb(255, 255, 255);">
+                    </a>
+            </article>
+        </div>
+
+        <footer id="footer">
+            <p>
+                © 2023 Sorin Tudose. All rights reserved.
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
