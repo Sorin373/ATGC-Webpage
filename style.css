@@ -12,6 +12,101 @@ body {
     cursor: default;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+::-webkit-scrollbar-button:single-button {
+    background-color: transparent;
+    display: block;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-button:single-button:hover {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:decrement {
+    height: 12px;
+    width: 15px;
+    background-position: 4px 5px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(112, 112, 112)'><polygon points='0,50 50,100 50,0'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:decrement:active {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='0,50 50,100 50,0'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:increment {
+    height: 12px;
+    width: 15px;
+    background-position: 5px 5px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(96, 96, 96)'><polygon points='0,0 0,100 50,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:increment:active {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='0,0 0,100 50,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+    height: 14px;
+    width: 16px;
+    background-position: center 4px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(96, 96, 96)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:active {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment {
+    height: 14px;
+    width: 16px;
+    background-position: center 5px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(96, 96, 96)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment:active {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+::placeholder {
+    color: rgb(150, 150, 150);
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgb(150, 150, 150);
+    opacity: 1;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgb(150, 150, 150);
+    opacity: 1;
+}
+
+::selection {
+    background-color: rgb(218, 216, 216);
+}
+
 a:link {
     color: rgb(95, 95, 95);
     text-decoration: none;
@@ -43,80 +138,47 @@ a:hover {
     grid-row: 1;
     grid-column: 1;
     display: grid;
-    grid-template-columns: 15rem auto;
-    grid-template-rows: auto;
-    background-color: rgb(234, 239, 245);
-    width: auto;
-    height: auto;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 1px;
-}
-
-#picture {
-    grid-column: 1;
-    grid-row: 1;
-    border-radius: 50%;
-    margin: 2rem;
-    margin-right: 0;
-    height: auto;
-}
-
-#picture img {
-    width: 150px;
-    height: auto;
-    border-radius: 10px;
-}
-
-#companyDetails {
-    display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
     gap: 1rem;
-    grid-row: 1;
-    grid-column: 2;
+    width: auto;
+    height: auto;
+    margin-bottom: 1rem;
+    align-items: center;
 }
 
-#companyTitle {
-    grid-column: 1 / span 2;
-    grid-row: 1;
-    font-size: 40pt;
-    font-weight: 700;
-    margin: 1rem;
-    margin-bottom: 0;
-    padding-right: 5rem;
-    text-transform: uppercase;
-    border-bottom-style: solid;
-    border-width: 2px;
-}
-
-#companyProfile {
-    padding: 0;
-    margin: 1rem;
-    margin-top: 0;
-    font-size: 20pt;
-    font-weight: 300;
-    grid-row: 2;
+#picture {
+    grid-row: 1 / span 2;
     grid-column: 1;
+    margin: auto; 
+    width: 200px;
+    height: auto;
+    border: 1px solid rgb(196, 195, 195);
+    border-radius: 10px;
+    padding: 5px;
 }
 
-#companyDetails img {
-    width: 200px;
-    height: 200px;
-    margin: 2rem;
-    margin-top: 0;
-    grid-row: 2;
+#profile p {
     grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+    margin-right: auto;
+    font-size: 50pt;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 #nav {
+    grid-row: 2;
+    grid-column: 2;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    grid-row: 2;
-    grid-column: 1;
     background-color: rgb(234, 239, 245);
     border-radius: 10px;
+    height: fit-content;
+    width: fit-content;
+    margin-right: auto;
 }
 
 .navLinks {
@@ -144,15 +206,9 @@ a:hover {
     color: rgb(73, 72, 72);
 }
 
-#aboutCompany {
-    grid-column: 1;
-    grid-row: 3;
-    background-color: rgb(252, 241, 241);
-    border-radius: 10px;
-    margin-bottom: 1%;
-}
-
 #footer {
+    grid-row: 3;
+    grid-column: 1;
     text-align: left;
     padding: 10px;
 }
@@ -162,13 +218,20 @@ a:hover {
     font-size: 8pt;
 }
 
+#aboutCompany {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: rgb(252, 241, 241);
+    border-radius: 10px;
+    margin-bottom: 1%;
+}
+
 #aboutTitle p {
-    margin: 0;
+    margin: 1rem;
+    margin-bottom: 0;
+    padding-bottom: 0.5rem;
     font-size: 35pt;
-    padding: 1rem;
-    padding-bottom: 1rem;
-    border-bottom-style: solid;
-    border-width: 1px;
+    border-bottom: 1px solid;
 }
 
 #aboutContent p {
@@ -176,22 +239,23 @@ a:hover {
     font-size: 15pt;
     padding: 2%;
     text-align: justify;
+    line-height: 30px;
 }
 
 #companyServices {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 2;
     background-color: rgb(252, 241, 241);
     border-radius: 10px;
     margin-bottom: 2%;
 }
 
 #servicesTitle p {
-    margin: 0;
+    margin: 1rem;
+    margin-bottom: 0;
+    padding-bottom: 0.5rem;
     font-size: 35pt;
-    padding: 1rem;
-    border-bottom-style: solid;
-    border-width: 1px;
+    border-bottom: 1px solid;
 }
 
 #companyServices article{
@@ -199,11 +263,12 @@ a:hover {
     font-size: 15pt;
     padding: 2%;
     text-align: justify;
+    line-height: 30px;
 }
 
 #projectCompany {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 2;
     background-color: rgb(252, 241, 241);
     border-radius: 10px;
     margin-bottom: 2%;
@@ -236,7 +301,7 @@ a:hover {
 
 #contact {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 2;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -250,6 +315,7 @@ a:hover {
     grid-row: 1;
     width: fit-content;
     margin: auto;
+    line-height: 25px;
 }
 
 #contactForm {
@@ -311,28 +377,6 @@ a:hover {
 #button:active {
     width: 23%;
     transition: 100ms;
-    border-radius: 100%;
-}
-
-::placeholder {
-    color: rgb(150, 150, 150);
-    opacity: 1;
-}
-
-:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: rgb(150, 150, 150);
-    opacity: 1;
-}
-
-::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: rgb(150, 150, 150);
-    opacity: 1;
-}
-
-::selection {
-    background-color: rgb(218, 216, 216);
 }
 
 #projectNav {
@@ -374,8 +418,7 @@ a:hover {
 #title {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    border-bottom-style: solid;
-    border-width: 2px;
+    border-bottom: 2px solid;
     font-size: 25pt;
     margin: 0;
     padding: 1rem;
